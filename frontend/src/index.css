@@ -1,0 +1,44 @@
+/* Global styles and resets */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Disable text selection on interactive elements */
+button, select, input[type="range"] {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(0, 212, 170, 0.3);
+  color: #f1f5f9;
+}
+
+::-moz-selection {
+  background: rgba(0, 212, 170, 0.3);
+  color: #f1f5f9;
+}
+
+/* Prevent FOUC (Flash of Unstyled Content) */
+html {
+  visibility: visible;
+  opacity: 1;
+}

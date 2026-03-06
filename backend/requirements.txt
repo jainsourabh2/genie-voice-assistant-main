@@ -1,0 +1,5 @@
+google-genai
+websockets
+pydantic
+python-dotenv
+colorama
